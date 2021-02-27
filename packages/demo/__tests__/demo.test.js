@@ -2,7 +2,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { Demo } from "../src/index";
 
-describe("Button", () => {
+describe("Demo", () => {
   it("should render some text", () => {
     const args = { text: "foobar" };
     const component = renderer.create(<Demo {...args} />);
