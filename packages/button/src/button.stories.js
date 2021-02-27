@@ -14,3 +14,9 @@ Default.args = {
   label: "click me",
   primary: true
 };
+
+Default.argTypes = {
+  onClick: { 
+    action: "clicked"
+  }
+};

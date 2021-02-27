@@ -11,6 +11,9 @@ export const Button = styled.a`
   color: black;
   border: 2px solid black;
   text-align: center;
+  &:hover {
+    cursor: pointer;
+  }
 
   ${props => props.primary && css`
     background: orange;
