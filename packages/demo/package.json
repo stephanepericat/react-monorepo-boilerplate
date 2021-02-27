@@ -1,6 +1,6 @@
 {
   "name": "react-mono-demo",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "main": "dist/bundle.js",
   "files": [
     "dist"
@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && webpack --config ../../webpack.config.js",
-    "deploy": "yarn build && yarn publish"
+    "deploy": "yarn build && yarn publish --new-version minor"
   },
   "publishConfig": {
     "registry": "http://localhost:4873/"
