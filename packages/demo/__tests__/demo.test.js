@@ -9,6 +9,6 @@ describe("Button", () => {
     const tree = component.toJSON();
 
     expect(tree.type).toEqual("div");
-    expect(tree.children).toEqual(["foobar"]);
+    expect(tree.children).toEqual([args.text]);
   });
 });
