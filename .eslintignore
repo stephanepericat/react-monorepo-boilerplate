@@ -2,3 +2,4 @@
 babel.config.js
 postcss.config.js
 tailwind.config.js
+packages/**/dist/*
