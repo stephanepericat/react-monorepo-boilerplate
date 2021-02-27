@@ -1,6 +1,6 @@
 {
   "name": "react-mono-demo",
-  "version": "1.7.0",
+  "version": "1.9.0",
   "main": "dist/bundle.js",
   "files": [
     "dist"
