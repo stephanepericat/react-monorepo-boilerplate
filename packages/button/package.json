@@ -1,11 +1,17 @@
 {
   "name": "react-mono-button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/bundle.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "scripts": {
-    "build": "rimraf dist && webpack --config ../../webpack.config.js"
+    "build": "rimraf dist && webpack --config ../../webpack.config.js",
+    "publish": "yarn build && yarn version --patch && yarn publish"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873/"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
