@@ -12,8 +12,6 @@ export const Button = styled.a`
   border: 2px solid black;
   text-align: center;
 
-  /* The GitHub button is a primary button
-   * edit this to target it specifically! */
   ${props => props.primary && css`
     background: orange;
     color: white;
