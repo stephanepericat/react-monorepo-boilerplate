@@ -1,5 +1,5 @@
 // import React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 export const Button = styled.a`
   display: inline-block;
@@ -18,4 +18,3 @@ export const Button = styled.a`
     border-color: orange;
   `}
 `;
-

@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import { Button } from './index';
+import { Button } from "./index";
 
 export default {
-  title: 'Boilerplate/Button',
+  title: "Boilerplate/Button",
   component: Button,
 };
 

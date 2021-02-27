@@ -17,6 +17,6 @@ describe("Button", () => {
     const component = renderer.create(<Button {...args}>Click Me</Button>);
     const tree = component.toJSON();
 
-    expect(tree).toHaveStyleRule('background', 'orange');
+    expect(tree).toHaveStyleRule("background", "orange");
   });
 });

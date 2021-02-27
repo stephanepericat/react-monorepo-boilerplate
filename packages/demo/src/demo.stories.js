@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import { Demo } from './index';
+import { Demo } from "./index";
 
 export default {
-  title: 'Boilerplate/Demo',
+  title: "Boilerplate/Demo",
   component: Demo,
 };
 
