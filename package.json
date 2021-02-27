@@ -31,7 +31,7 @@
     "tailwindcss": "^2.0.3"
   },
   "scripts": {
-    "build:all": "yarn workspaces run build",
+    "build-packages": "yarn workspaces run build",
     "build-storybook": "build-storybook",
     "lint": "eslint packages/**/*.js",
     "storybook": "start-storybook -p 6006",
