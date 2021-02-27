@@ -865,7 +865,7 @@
     "@babel/helper-create-regexp-features-plugin" "^7.12.13"
     "@babel/helper-plugin-utils" "^7.12.13"
 
-"@babel/preset-env@^7.1.6", "@babel/preset-env@^7.12.1":
+"@babel/preset-env@^7.1.6", "@babel/preset-env@^7.12.1", "@babel/preset-env@^7.13.8":
   version "7.13.8"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.13.8.tgz#1133d7ae806d6bf981b7a1a49e336d4d88db1953"
   integrity sha512-Sso1xOpV4S3ofnxW2DsWTE5ziRk62jEAKLGuQ+EJHC+YHTbFG38QUTixO3JVa1cYET9gkJhO1pMu+/+2dDhKvw==
@@ -958,7 +958,7 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/preset-react@^7.12.1":
+"@babel/preset-react@^7.12.1", "@babel/preset-react@^7.12.13":
   version "7.12.13"
   resolved "https://registry.yarnpkg.com/@babel/preset-react/-/preset-react-7.12.13.tgz#5f911b2eb24277fa686820d5bd81cad9a0602a0a"
   integrity sha512-TYM0V9z6Abb6dj1K7i5NrEhA13oS5ujUYQYDfqIBXYHOc2c2VkFgc+q9kyssIyUfy4/hEwqrgSlJ/Qgv8zJLsA==
@@ -4391,6 +4391,16 @@ css-what@^3.2.1:
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-3.4.2.tgz#ea7026fcb01777edbde52124e21f327e7ae950e4"
   integrity sha512-ACUm3L0/jiZTqfzRM3Hi9Q8eZqd6IK37mMWPLz9PJxkLWllYeRf+EHUSHYEtFop2Eqytaq1FizFVh7XfBnXCDQ==
 
+css@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/css/-/css-2.2.4.tgz#c646755c73971f2bba6a601e2cf2fd71b1298929"
+  integrity sha512-oUnjmWpy0niI3x/mPL8dVEI1l7MnG3+HHyRPHf+YFSbK+svOhXpmSOcDURUh2aOCgl2grzrOPt1nHLuCVFULLw==
+  dependencies:
+    inherits "^2.0.3"
+    source-map "^0.6.1"
+    source-map-resolve "^0.5.2"
+    urix "^0.1.0"
+
 cssesc@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
@@ -7198,6 +7208,13 @@ jest-snapshot@^26.6.2:
     pretty-format "^26.6.2"
     semver "^7.3.2"
 
+jest-styled-components@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/jest-styled-components/-/jest-styled-components-7.0.3.tgz#cc0b031f910484e68f175568682f3969ff774b2c"
+  integrity sha512-jj9sWyshehUnB0P9WFUaq9Bkh6RKYO8aD8lf3gUrXRwg/MRddTFk7U9D9pC4IAI3v9fbz4vmrMxwaecTpG8NKA==
+  dependencies:
+    css "^2.2.4"
+
 jest-util@^26.6.2:
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-26.6.2.tgz#907535dbe4d5a6cb4c47ac9b926f6af29576cbc1"
@@ -9310,15 +9327,15 @@ react-inspector@^5.0.1:
     is-dom "^1.0.0"
     prop-types "^15.0.0"
 
+"react-is@^16.12.0 || ^17.0.0", react-is@^17.0.1:
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
+  integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
+
 react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
-
-react-is@^17.0.1:
-  version "17.0.1"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
-  integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
@@ -9347,6 +9364,14 @@ react-refresh@^0.8.3:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
+react-shallow-renderer@^16.13.1:
+  version "16.14.1"
+  resolved "https://registry.yarnpkg.com/react-shallow-renderer/-/react-shallow-renderer-16.14.1.tgz#bf0d02df8a519a558fd9b8215442efa5c840e124"
+  integrity sha512-rkIMcQi01/+kxiTE9D3fdS959U1g7gs+/rborw++42m1O9FAQiNI/UNRZExVUoAOprn4umcXf+pFRou8i4zuBg==
+  dependencies:
+    object-assign "^4.1.1"
+    react-is "^16.12.0 || ^17.0.0"
+
 react-sizeme@^2.6.7:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/react-sizeme/-/react-sizeme-2.6.12.tgz#ed207be5476f4a85bf364e92042520499455453e"
@@ -9367,6 +9392,16 @@ react-syntax-highlighter@^13.5.0:
     lowlight "^1.14.0"
     prismjs "^1.21.0"
     refractor "^3.1.0"
+
+react-test-renderer@^17.0.1:
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-17.0.1.tgz#3187e636c3063e6ae498aedf21ecf972721574c7"
+  integrity sha512-/dRae3mj6aObwkjCcxZPlxDFh73XZLgvwhhyON2haZGUEhiaY5EjfAdw+d/rQmlcFwdTpMXCSGVk374QbCTlrA==
+  dependencies:
+    object-assign "^4.1.1"
+    react-is "^17.0.1"
+    react-shallow-renderer "^16.13.1"
+    scheduler "^0.20.1"
 
 react-textarea-autosize@^8.1.1:
   version "8.3.1"
@@ -10176,7 +10211,7 @@ source-list-map@^2.0.0:
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-2.0.1.tgz#3993bd873bfc48479cca9ea3a547835c7c154b34"
   integrity sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==
 
-source-map-resolve@^0.5.0:
+source-map-resolve@^0.5.0, source-map-resolve@^0.5.2:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/source-map-resolve/-/source-map-resolve-0.5.3.tgz#190866bece7553e1f8f267a2ee82c606b5509a1a"
   integrity sha512-Htz+RnsXWk5+P2slx5Jh3Q66vhQj1Cllm0zvnaY98+NFx+Dv2CF/f5O/t8x+KaNdrdIAsruNzoh/KpialbqAnw==
