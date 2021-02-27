@@ -183,3 +183,10 @@ Time:        2.534 s
 Ran all test suites.
 ✨  Done in 4.88s.
 ```
+
+## Related Links
+
+- [React](https://reactjs.org/)
+- [Styled Components](https://styled-components.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Jest Styled Components](https://www.npmjs.com/package/jest-styled-components)
