@@ -1,6 +1,6 @@
 {
   "name": "react-mono-button",
-  "version": "1.9.0",
+  "version": "1.0.0",
   "main": "dist/bundle.js",
   "files": [
     "dist"
@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && webpack --config ../../webpack.config.js",
-    "deploy": "yarn build && yarn publish --new-version minor"
+    "deploy": "yarn build && yarn version --patch --no-git-tag-version && yarn publish --non-interactive"
   },
   "publishConfig": {
     "registry": "http://localhost:4873/"
