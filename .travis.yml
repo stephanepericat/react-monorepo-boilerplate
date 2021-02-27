@@ -1,0 +1,18 @@
+# Tells Travis we're running on a Node environment
+language: "node_js"
+node_js: "14"
+
+# Script that is run before the script phase
+before_script:
+  - yarn build-storybook
+
+# Deployment information
+deploy:
+  provider: pages # Tell Travis we want to deploy to Github Pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN # Will take the environment variable from Trvis
+  local_dir: storybook-static # The folder that needs to be deployed
+  repo: stephanepericat/react-monorepo-boilerplate # Add your username/project_name here
+  target_branch: gh-pages # Tell Travis to deploy on the gh-pages branch
+  on:
+    branch: main # Tell Travis to trigger a deploy only when we push to master
