@@ -1,7 +1,7 @@
 {
   "name": "react-mono-button",
   "version": "1.0.0",
-  "main": "dist/main.js",
+  "main": "dist/bundle.js",
   "files": ["dist"],
   "license": "MIT",
   "scripts": {
