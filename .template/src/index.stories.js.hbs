@@ -1,0 +1,15 @@
+import React from "react";
+
+import { {{pascalCase name}} } from "./index";
+
+export default {
+  title: "Boilerplate/{{pascalCase name}}",
+  component: {{pascalCase name}},
+};
+
+const Template = (args) => <{{pascalCase name}} {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  text: "{{name}}"
+};

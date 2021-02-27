@@ -1,12 +1,12 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { Demo } from "../src/index";
+import { {{pascalCase name}} } from "../src/index";
 import "jest-styled-components";
 
-describe("Demo", () => {
+describe("{{pascalCase name}}", () => {
   it("should render some text", () => {
-    const args = { text: "demo" };
-    const component = renderer.create(<Demo {...args} />);
+    const args = { text: "{{name}}" };
+    const component = renderer.create(<{{pascalCase name}} {...args} />);
     const tree = component.toJSON();
 
     expect(tree.type).toEqual("div");
