@@ -1,7 +1,8 @@
 module.exports = {
   mode: "production",
   output: {
-    filename: "bundle.js"
+    filename: "bundle.js",
+    libraryTarget: "umd"
   },
   module: {
     rules: [

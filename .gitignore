@@ -3,3 +3,4 @@ node_modules
 .vscode
 /stories
 packages/**/dist
+yarn-error.log

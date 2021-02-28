@@ -1,8 +1,9 @@
 {
-  "name": "react-mono-{{name}}",
+  "name": "@stephanepericat/react-mono-{{name}}",
   "version": "{{version}}",
   "main": "dist/bundle.js",
   "files": [
+    "src",
     "dist"
   ],
   "license": "MIT",
@@ -11,8 +12,9 @@
     "deploy": "yarn build && yarn version --patch --no-git-tag-version && yarn publish --non-interactive"
   },
   "publishConfig": {
-    "registry": "http://localhost:4873/"
+    "registry": "https://npm.pkg.github.com"
   },
+  "repository": "https://github.com/stephanepericat/react-monorepo-boilerplate",
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
