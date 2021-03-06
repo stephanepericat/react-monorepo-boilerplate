@@ -7,16 +7,11 @@ export default {
   component: Button,
 };
 
-const Template = (args) => <Button {...args}>{args.label}</Button>;
+const Template = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-  label: "click me",
-  primary: true
-};
 
-Default.argTypes = {
-  onClick: { 
-    action: "clicked"
-  }
+Default.args = {
+  text: "click me",
+  primary: true
 };

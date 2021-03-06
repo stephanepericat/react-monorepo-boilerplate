@@ -26,6 +26,16 @@ module.exports = (plop) => {
       },
       {
         type: "add",
+        path: "packages/{{pascalCase name}}/src/primitives.js",
+        templateFile: ".template/src/primitives.js.hbs"
+      },
+      {
+        type: "add",
+        path: "packages/{{pascalCase name}}/src/{{name}}.js",
+        templateFile: ".template/src/component.js.hbs"
+      },
+      {
+        type: "add",
         path: "packages/{{pascalCase name}}/src/{{name}}.stories.js",
         templateFile: ".template/src/index.stories.js.hbs"
       },
