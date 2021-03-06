@@ -1,9 +1,2 @@
-import React from "react";
-import PropTypes from "prop-types";
-// import styled, { css } from "styled-components";
-
-export const {{pascalCase name}} = ({ text }) => <div>{text}</div>;
-
-{{pascalCase name}}.propTypes = {
-  text: PropTypes.string.isRequired
-};
+export { {{pascalCase name}} } from "./{{name}}";
+export * as primitives from "./primitives";

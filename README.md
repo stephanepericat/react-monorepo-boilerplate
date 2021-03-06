@@ -4,21 +4,22 @@ a small monorepo boilerplate for React 17+ components; using Yarn Workspaces.
 
 ## Commands
 
-### add-package
+### add-package <package-name>
 
 Creates a new package.
 
 ```shell
-yarn add-package
+yarn add-package Demo
 
-$ plop
-? Enter component name: foo
-✔  -> {"name":"foo","version":"1.0.0"}
-✔  ++ /packages/Foo/package.json
-✔  ++ /packages/Foo/src/index.js
-✔  ++ /packages/Foo/src/foo.stories.js
-✔  ++ /packages/Foo/__tests__/foo.test.js
-✨  Done in 4.75s.
+$ plop Demo
+✔  -> {"name":"demo","version":"1.0.0"}
+✔  ++ /packages/Demo/package.json
+✔  ++ /packages/Demo/src/index.js
+✔  ++ /packages/Demo/src/primitives.js
+✔  ++ /packages/Demo/src/demo.js
+✔  ++ /packages/Demo/src/demo.stories.js
+✔  ++ /packages/Demo/__tests__/demo.test.js
+✨  Done in 0.83s.
 ```
 
 ### build-packages

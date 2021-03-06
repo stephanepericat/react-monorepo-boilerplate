@@ -1,7 +1,7 @@
 {
   "name": "@stephanepericat/react-mono-button",
   "version": "1.0.0",
-  "main": "dist/bundle.js",
+  "main": "src/index.js",
   "files": [
     "src",
     "dist"
@@ -16,6 +16,7 @@
   },
   "repository": "https://github.com/stephanepericat/react-monorepo-boilerplate",
   "dependencies": {
+    "@stephanepericat/react-mono-theme": "^1.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

@@ -5,7 +5,12 @@ import "jest-styled-components";
 
 describe("Button", () => {
   it("should render an anchor", () => {
-    const component = renderer.create(<Button>Click Me</Button>);
+    const args = {
+      onButtonClick: jest.fn(),
+      primary: false,
+      text: "Click Me",
+    };
+    const component = renderer.create(<Button {...args} />);
     const tree = component.toJSON();
 
     expect(tree.type).toEqual("a");
@@ -13,10 +18,14 @@ describe("Button", () => {
   });
 
   it("should style a primary button differently", () => {
-    const args = { primary: true };
-    const component = renderer.create(<Button {...args}>Click Me</Button>);
+    const args = {
+      onButtonClick: jest.fn(),
+      primary: true,
+      text: "Click Me",
+    };
+    const component = renderer.create(<Button {...args} />);
     const tree = component.toJSON();
 
-    expect(tree).toHaveStyleRule("background", "orange");
+    expect(tree).toHaveStyleRule("background", "#ff7700");
   });
 });

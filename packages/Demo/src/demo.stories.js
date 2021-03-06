@@ -10,6 +10,7 @@ export default {
 const Template = (args) => <Demo {...args} />;
 
 export const Default = Template.bind({});
+
 Default.args = {
   text: "demo"
 };
