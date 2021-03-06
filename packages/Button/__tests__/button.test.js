@@ -5,7 +5,11 @@ import "jest-styled-components";
 
 describe("Button", () => {
   it("should render an anchor", () => {
-    const args = { primary: false, text: "Click Me" };
+    const args = {
+      onButtonClick: jest.fn(),
+      primary: false,
+      text: "Click Me",
+    };
     const component = renderer.create(<Button {...args} />);
     const tree = component.toJSON();
 
@@ -14,7 +18,11 @@ describe("Button", () => {
   });
 
   it("should style a primary button differently", () => {
-    const args = { primary: true, text: "Click Me" };
+    const args = {
+      onButtonClick: jest.fn(),
+      primary: true,
+      text: "Click Me",
+    };
     const component = renderer.create(<Button {...args} />);
     const tree = component.toJSON();
 
