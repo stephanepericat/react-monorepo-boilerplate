@@ -187,7 +187,7 @@ Ran all test suites.
 
 ## Related Links
 
-- [Commitlint](https://commitlint.js.org/#/)
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 - [Jest Styled Components](https://www.npmjs.com/package/jest-styled-components)
 - [React](https://reactjs.org/)
 - [Storybook](https://storybook.js.org/)
