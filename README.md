@@ -187,6 +187,7 @@ Ran all test suites.
 
 ## Related Links
 
+- [Commitlint](https://commitlint.js.org/#/)
 - [Jest Styled Components](https://www.npmjs.com/package/jest-styled-components)
 - [React](https://reactjs.org/)
 - [Storybook](https://storybook.js.org/)
